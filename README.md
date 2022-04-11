@@ -1,8 +1,6 @@
 
 # RAILGUN Trusted Setup Ceremony: How to Contribute Guide
 
-First of all, reach us in the [RAILGUN Phase-2 Ceremony Telegram group](https://t.me/+moI-BUoCLMM0MmZl) to participate in the ceremony.
-
 The important part of the ceremony is that the toxic value is not leaked and it's deleted after the completion of the ceremony. Thus we recommend you to restart your machine after completing your contribution.
 
 You can check the [Phase1 Perpetual Powers of Tau Ceremony](https://github.com/weijiekoh/perpetualpowersoftau) to verifiy Phase-1 contributions.
@@ -54,4 +52,4 @@ npm start {yourname}
 ```
 wormhole send ./ceremony/new
 ```
-### Thank you very much for contributing!
+### Thank you very much for contributing! Check the [Attestations](ATTESTATION.md)
