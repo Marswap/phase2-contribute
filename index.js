@@ -28,7 +28,8 @@ const contribute = async (contributor) => {
   console.log('If you have keybase installed, then run:')
   console.log('\x1b[32m%s\x1b[0m',`keybase sign -i ${transcriptFilepath} -b -o ${transcriptFilepath}.signed`);
   const hash = crypto.createHash('sha256');
-  hash.update(transcriptFilepath);
+  const buffer = fs.readFileSync(transcriptFilepath);
+  hash.update(buffer);
   const hex = hash.digest('hex');
   console.log('Otherwise, tweet this value:\x1b[32m%s\x1b[0m', hex);
   console.log('Thank you for the contribution');
