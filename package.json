@@ -6,7 +6,10 @@
   "license": "MIT",
   "author": "RAILGUN Core Dev",
   "scripts": {
-    "start": "node ./index.js"
+    "init": "node ./init.js",
+    "start": "node ./index.js",
+    "verify": "node ./verify.js",
+    "download": "node ./download.js"
   },
   "dependencies": {
     "shelljs": "^0.8.5",

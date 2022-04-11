@@ -11,7 +11,7 @@ You can check the [Phase1 Perpetual Powers of Tau Ceremony](https://github.com/w
 A machine with 4 cores and 16Gb would do the work, but we recommend a bigger machine to process the ceremony faster.
 
 
-For attestation, please ensure that you have a public identity at [Keybase](https://keybase.io/), or Twitter account.
+For attestation, please ensure that you have a public identity such as a Twitter account.
 
 
 ## 2. Preparation of the Machine
@@ -48,7 +48,7 @@ Alternatively, you can receive the last contribution and extract it to `./ceremo
 ```
 npm start {yourname}
 ```
-3. Attest to your contribution by either running the output **keybase** command or **tweeting** the output transcript hash.
+3. Attest to your contribution by **tweeting** the output transcript hash.
 
 4. Send your contribution to the coordinator by sharing the output code after running this command
 ```
