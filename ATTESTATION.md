@@ -39,7 +39,7 @@ Thanks to all contributors for their time and effort in making RAILGUN setup saf
 | 33 | Max Shean       | Keybase                                                                   |
 | 34 | Andrey          | https://www.linkedin.com/feed/update/urn:li:activity:6920096787072487425/ |
 | 35 | SinghCapital    | https://twitter.com/thejohalfiles/status/1514361165832368129              |
-| 36 | KD              |                                                                           |
+| 36 | KD              | https://twitter.com/proofofRAIL/status/1514742752579244034                |
 | 37 | Rios            | https://twitter.com/jmvrios/status/1514465557965328390                    |
 | 38 | Ray	           | https://twitter.com/eduhsil/status/1514604173404241926                    |
 | 39 | Rasikh	         | https://twitter.com/RasikhMorani/status/1514605230054289412               | 
