@@ -34,7 +34,7 @@ Thanks to all contributors for their time and effort in making RAILGUN setup saf
 | 28 | 0xust           | https://twitter.com/0xUST/status/1513956703603146755                      |
 | 29 | kerthmash       | https://twitter.com/AndyLastName/status/1514078740074176517               |
 | 30 | liucougar       | https://twitter.com/liucougar/status/1514111945309188099                  |
-| 31 | auryu           | https://twitter.com/auryn_macmillan/status/1514228592808689673            |
+| 31 | auryn           | https://twitter.com/auryn_macmillan/status/1514228592808689673            |
 | 32 | potas           | https://twitter.com/martign0/status/1514296388921745414                   |
 | 33 | Max Shean       | Keybase                                                                   |
 | 34 | Andrey          | https://www.linkedin.com/feed/update/urn:li:activity:6920096787072487425/ |
@@ -42,7 +42,7 @@ Thanks to all contributors for their time and effort in making RAILGUN setup saf
 | 36 | KD              |                                                                           |
 | 37 | Rios            | https://twitter.com/jmvrios/status/1514465557965328390                    |
 | 38 | Ray	           | https://twitter.com/eduhsil/status/1514604173404241926                    |
-| 39 | Raiskh	         | https://twitter.com/RasikhMorani/status/1514605230054289412               | 
+| 39 | Rasikh	         | https://twitter.com/RasikhMorani/status/1514605230054289412               | 
 | 40 | Cam           | https://twitter.com/VanCamPHAM1/status/1514612712063782916                |
 
 
