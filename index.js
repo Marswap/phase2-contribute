@@ -37,7 +37,7 @@ const contribute = async (contributorName, wormholeCode) => {
   fs.writeFileSync(transcriptFilepath, `${transcript.trim()}`);
 
   // send contribution
-  console.log('Please share the code the following code with the coordinator');
+  console.log('\x1b[32m%s\x1b[0m','Please share the following code with the coordinator');
   const out = shelljs.exec('wormhole send ./ceremony/new');
 
   // compute transcript hash
