@@ -4,27 +4,43 @@ const fs = require('fs');
 const path = require('path');
 const shelljs = require('shelljs');
 
-const dirname = path.join(__dirname, './ceremony/old');
-const newDirname = path.join(__dirname, './ceremony/new');
 
-const contribute = async (contributor) => {
-  let transcript = `Contribution by: ${contributor}\n`;
+
+const contribute = async (contributorName, wormholeCode) => {
+  // create directories
+  shelljs.exec('rm -rf ./ceremony');
+  shelljs.mkdir('-p', ['./ceremony/old', './ceremony/new']);
+  // download previous contribution
+  shelljs.exec(`wormhole receive ${wormholeCode} -o ./ceremony/old --accept-file`);
+
+  const oldContributionDir = path.join(__dirname, './ceremony/old');
+  const newContributionDir = path.join(__dirname, './ceremony/new');
+
+  // contribute
+  let transcript = `Contribution by: ${contributorName}\n`;
   let i = 1;
-  fs.readdirSync(dirname).forEach((file) => {
+  fs.readdirSync(oldContributionDir).forEach((file) => {
     if(path.extname(file) === '.zkey'){
-      const oldCont = path.join(dirname, file);
-      const newCont = path.join(newDirname, file);
+      const oldCont = path.join(oldContributionDir, file);
+      const newCont = path.join(newContributionDir, file);
       const currentEntropy = crypto.randomBytes(256).toString('hex');
-      console.log(`Contributing (${i++}/5)`);
-      const cmd = `node ./node_modules/.bin/snarkjs zkc ${oldCont} ${newCont} -e="${currentEntropy}" -n="${contributor}"`;
-      const out = shelljs.exec(`${cmd}`, { silent: true });
+      console.log(`Contributing to ${path.basename(newCont)}`);
+      const cmd = `node ./node_modules/.bin/snarkjs zkc ${oldCont} ${newCont} -e="${currentEntropy}" -n="${contributorName}"`;
+      const out = shelljs.exec(`${cmd}`, { silent: true, fatal: true });
       transcript += `Contributing to ${path.basename(newCont)}\n`;
       transcript += `${out}\n\n`;
     }
   });
 
-  const transcriptFilepath = path.join(newDirname, 'transcript');
-  fs.writeFileSync(transcriptFilepath, `${transcript.trim()}\n`);
+  // write transcript
+  const transcriptFilepath = path.join(newContributionDir, 'transcript');
+  fs.writeFileSync(transcriptFilepath, `${transcript.trim()}`);
+
+  // send contribution
+  console.log('Please share the code the following code with the coordinator');
+  const out = shelljs.exec('wormhole send ./ceremony/new');
+
+  // compute transcript hash
   const hash = crypto.createHash('sha256');
   const buffer = fs.readFileSync(transcriptFilepath);
   hash.update(buffer);

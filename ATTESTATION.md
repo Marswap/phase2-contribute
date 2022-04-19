@@ -46,6 +46,8 @@ Thanks to all contributors for their time and effort in making RAILGUN setup saf
 | 40 | Cam             | https://twitter.com/VanCamPHAM1/status/1514612712063782916                |
 | 41 | Sergiu          | https://twitter.com/sergiuromang/status/1514913611017244672               |
 | 42 | CryptoMoose     | https://twitter.com/Mooselong1983/status/1514917779195019272              |
+| 43 | Alexios         | https://twitter.com/ALEXXI67000494/status/1516037656966496257             |
+| 44 | Bea O'Carroll   | https://twitter.com/beezuso/status/1516122629459132421                    |
 
 
 ## Other Attestations
