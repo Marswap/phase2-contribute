@@ -25,7 +25,7 @@ const contribute = async (contributorName, wormholeCode) => {
       const newCont = path.join(newContributionDir, file);
       const currentEntropy = crypto.randomBytes(256).toString('hex');
       console.log(`Contributing to ${path.basename(newCont)}`);
-      const cmd = `node ./node_modules/.bin/snarkjs zkc ${oldCont} ${newCont} -e="${currentEntropy}" -n="${contributorName}"`;
+      const cmd = `node ./node_modules/.bin/snarkjs zkc "${oldCont}" "${newCont}" -e="${currentEntropy}" -n="${contributorName}"`;
       const out = shelljs.exec(`${cmd}`, { silent: true, fatal: true });
       transcript += `Contributing to ${path.basename(newCont)}\n`;
       transcript += `${out}\n\n`;

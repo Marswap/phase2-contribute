@@ -48,7 +48,7 @@ Thanks to all contributors for their time and effort in making RAILGUN setup saf
 | 42 | CryptoMoose     | https://twitter.com/Mooselong1983/status/1514917779195019272              |
 | 43 | Alexios         | https://twitter.com/ALEXXI67000494/status/1516037656966496257             |
 | 44 | Bea O'Carroll   | https://twitter.com/beezuso/status/1516122629459132421                    |
-
+| 45 | David           | https://twitter.com/hartmann_david/status/1516569661583806470             |
 
 ## Other Attestations
 
@@ -61,3 +61,12 @@ ad2e3ccb50794403c9068826c4c42642680125e94f01e7c130dcbd15759be4c8
 IHWDUupRNFGIe1pT5UF7jAUD6hZIG4XZFH8WuS+M1XE0F9GTBUfaj7DBFgBahMwlZoLnnri3aSmTjK5uXv9qiDw=
 -----END BITCOIN SIGNED MESSAGE-----
 ```
+## Beacon
+We applied the hash of Ethereum Block **14600000** as the beacon generator with **10** iterations to the final zkey files
+
+## Verifying the Contributions
+To verify the contributions:
+```
+npm run verify final
+```
+Check that the output hashes are consistent with the corresponding hashes in [transcripts](./transcripts)
